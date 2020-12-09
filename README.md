@@ -11,5 +11,5 @@ are neglected Object types. With Generic Types, we can use not only one but any 
 
 I was initially confused about how we would use Generic Types in real-life code, but my group members told me about the real-life code example of ArrayLists and how ArrayLists employ the use of Generic Types to make the limits of code truly limitless! Thank you.
 
-Rifath Hossain Period 10
+Rifath Hossain Period 10,
 The Bronx High School of Science

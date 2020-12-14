@@ -30,8 +30,8 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
   }
 
   public T set(int index, T element){
-    T memory = super.get(index);
-    super.remove(index);
+    T memory = get(index);
+    remove(index);
     add(element);
     return memory;
   }

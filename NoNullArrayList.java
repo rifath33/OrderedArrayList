@@ -21,8 +21,15 @@ public class NoNullArrayList<T> extends ArrayList<T>{
     }
   }
 
-  // public T set(int index, T element){
-  //
-  // }
+  public T set(int index, T element){
+    if(element == null){
+      throw new IllegalArgumentException ("Elements cannot be null.");
+    }
+    else{
+      T memory = super.get(index);
+      super.set(index, element);
+      return memory;
+    }
+  }
 
 }

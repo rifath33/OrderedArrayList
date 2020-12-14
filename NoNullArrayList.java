@@ -1,14 +1,13 @@
 import java.util.ArrayList;
 
 public class NoNullArrayList<T> extends ArrayList<T>{
-  ArrayList<T> data;
 
   public NoNullArrayList(){
-    data = new ArrayList<T>();
+    super();
   }
 
   public NoNullArrayList(int startingCapacity){
-    data = new ArrayList<T>(startingCapacity);
+    super(startingCapacity);
   }
 
   public boolean add(T element){

@@ -1,6 +1,15 @@
 import java.util.ArrayList;
 
 public class NoNullArrayList<T> extends ArrayList<T>{
+  ArrayList<T> data;
+
+  public NoNullArrayList(){
+    data = new ArrayList<T>();
+  }
+
+  public NoNullArrayList(int startingCapacity){
+    data = new ArrayList<T>(startingCapacity);
+  }
 
   public boolean add(T element){
     if(element == null){

@@ -63,10 +63,16 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
    }
 
   public T set(int index, T element){
-    T memory = get(index);
-    remove(index);
+      
+     if(element == null){
+      throw new IllegalArgumentException ("Elements cannot be null.");
+    }
+      else{
+    T memory = super.get(index);
+    super.remove(index);
     add(element);
     return memory;
+      }
   }
 
 }

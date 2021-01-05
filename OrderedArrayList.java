@@ -29,6 +29,7 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
   public boolean add(T element){
     if(element == null){
       throw new IllegalArgumentException ("Elements cannot be null.");
+    }
       else{
         
         if(indexOf(element) > super.size()-1){
@@ -41,8 +42,6 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
         }
         
       }
-      
-    }
     
   }
 

@@ -36,7 +36,7 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
         return true;
         }
         else{
-            super.add(location,element);
+            super.add(indexOf(element),element);
             return true;
         }
         
@@ -46,14 +46,19 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
     
   }
 
-/*   public void add(int index, T element){
+  public void add(int index, T element){
     if(element == null){
       throw new IllegalArgumentException ("Elements cannot be null.");
     }
     
+    if(indexOf(element) > super.size()-1){
+      super.add(element);
+    }
+    else{
+        super.add(index,element);
+    }
     
-    
-  } */
+  }
 
   public T set(int index, T element){
     T memory = get(index);
